@@ -1,7 +1,7 @@
 # Read a text file
 # title: read_file
 # params: file_path (string)
-# return a string of words
+# return a string
 def read_file(file_path)
   return File.read(file_path)
 end
@@ -9,10 +9,9 @@ end
 # Create the word freq histogram
 # title: word_frequency
 # params: string
-# returns hash
-
+# returns a hash
 def word_frequency(string)
-  #Initialize a frquency hash
+  # initialize a frquency hash
   # freq_hash = {}
   freq_hash = Hash.new(0)
   # Cut string into an array of words
@@ -32,7 +31,3 @@ def word_frequency(string)
 # Return hash {:word, count}
   return freq_hash
 end
-
-
-
-
